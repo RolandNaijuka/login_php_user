@@ -1,0 +1,28 @@
+body{
+    background-color: #e3e3e3;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #272727;
+    padding: 10px 10px 0px;
+}
+
+p span{
+    font-size: 28x;
+    color: #272727;
+}
+
+.p-title{
+    padding-top: 20px;
+}
+
+.user-container img{
+    float: left;
+    width: 60px;
+}
+
+.user-container div{
+    float: left;
+}

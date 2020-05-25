@@ -1,0 +1,22 @@
+INSERT INTO users(user_first,user_last,user_email,user_uid,user_pwd)
+    VALUES ('Roland','Naijuka','naijuka.roland@gmail.com','Admin1','admin1Password');
+
+#changing the id when you delete elements
+SET @autoid = 0;
+UPDATE users SET id=@autoid:=(@autoid+1);
+ALTER TABLE users AUTO_INCREMENT=1;
+
+#system for uploading profile images
+CREATE TABLE IF NOT EXISTS `users`(
+	id int(11) AUTO_INCREMENT PRIMARY KEY NOT null,
+    first varchar(256) NOT null,
+    last varchar(256) NOT null,
+    username varchar(256) NOT null,
+    password varchar(256) NOT null
+);
+
+CREATE TABLE IF NOT EXISTS `profileimg`(
+	id int(11) AUTO_INCREMENT PRIMARY KEY NOT null,
+    userid int(11) NOT null,
+    status int(11) NOT null
+);
