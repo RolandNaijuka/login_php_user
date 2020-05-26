@@ -81,7 +81,11 @@
                 echo "You are not logged in!";
                 //log in
                 echo '<h2>Login as user!</h2>
+<<<<<<< HEAD
                 <form action="./login.php" >
+=======
+                <form action="./login.php" method="POST">
+>>>>>>> db6af29940531f8dc62662c72dc6d55110257832
                     <button class="btn btn-primary mt-3" type="submit" name="submitLogin">Login</button>
                 </form>';
                 include './signup.php';

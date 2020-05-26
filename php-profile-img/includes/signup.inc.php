@@ -65,7 +65,11 @@ if (isset($_POST['submit'])) {
                 }
             }
             else{
+<<<<<<< HEAD
                 header("Location: ../index.php?signup=usernameTaken&first=$first&last=$last&uid=$uid");
+=======
+                header("Location: ../index.php?signup=usernameTaken&first=$first&last=$last");
+>>>>>>> db6af29940531f8dc62662c72dc6d55110257832
                 exit();
             }
             

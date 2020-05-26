@@ -37,7 +37,6 @@
 </form>
 
 <?php
-
     if (isset($_GET['signup'])) {
         $signUpCheck = $_GET['signup'];
         if ($signUpCheck == "empty") {
@@ -46,13 +45,19 @@
                 You did not fill in all fields!</div>';
             exit();
         } elseif ($signUpCheck == "char") {
-            echo '<div id="alert" class="alert alert-danger" role="alert">Names cannot contain numbers</div>';
+            echo '<div id="alert" class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            Names cannot contain numbers</div>';
             exit();
         } elseif ($signUpCheck == "success") {
-            echo '<div id="alert" class="alert alert-success" role="alert">Sign up completed!</div>';
+            echo '<div id="alert" class="alert alert-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            Sign up completed!</div>';
             exit();
-        } elseif ($signUpCheck == "success") {
-            echo '<div id="alert" class="alert alert-success" role="alert">Sign up completed!</div>';
+        } elseif ($signUpCheck == "usernameTaken") {
+            echo '<div id="alert" class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            Username taken</div>';
             exit();
         }
     }
