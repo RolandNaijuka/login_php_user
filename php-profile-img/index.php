@@ -81,10 +81,10 @@
                 echo "You are not logged in!";
                 //log in
                 echo '<h2>Login as user!</h2>
-                <form action="./includes/login.php" method="POST">
+                <form action="./login.php" method="POST">
                     <button class="btn btn-primary mt-3" type="submit" name="submitLogin">Login</button>
                 </form>';
-                include 'signup.php';
+                include './signup.php';
             }
         ?>
         
@@ -92,6 +92,7 @@
             $("#alert").fadeTo(2000, 500).slideUp(500, function(){
                 $("#alert").slideUp(500);
             });
+
         </script>
         
     </div>
